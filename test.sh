@@ -13,12 +13,12 @@ mkdir -p build
 pushd build > /dev/null
 
 mkdir -p ../bin
-clang -Wall -o ../bin/test_math ../tests/test_math.c -L../lib -lmath
+clang -Wall -o ../bin/test_mymath ../tests/test_mymath.c -L../lib -lmymath
 
 popd > /dev/null
 
 pushd bin > /dev/null
-./test_math
+./test_mymath
 popd > /dev/null
 
 popd > /dev/null

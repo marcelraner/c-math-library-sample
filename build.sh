@@ -15,14 +15,14 @@ pushd build > /dev/null
 clang \
     -c \
     -Wall \
-    -o math.o \
+    -o mymath.o \
     -I ../include \
-    ../src/math.c
+    ../src/mymath.c
 
 mkdir -p ../lib
 ar \
-    rc ../lib/libmath.a \
-    math.o
+    rc ../lib/libmymath.a \
+    mymath.o
 
 popd > /dev/null
 popd > /dev/null
